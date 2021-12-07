@@ -3,14 +3,6 @@
     <ion-buttons *ngIf="!showSearchbar" slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-segment *ngIf="ios" [(ngModel)]="segment" (ionChange)="updateSchedule()">
-      <ion-segment-button value="all">
-        Todos
-      </ion-segment-button>
-      <ion-segment-button value="favorites">
-        Favoritos
-      </ion-segment-button>
-    </ion-segment>
     <ion-title *ngIf="!ios && !showSearchbar">Loja</ion-title>
     <ion-searchbar *ngIf="showSearchbar" showCancelButton="always" [(ngModel)]="queryText" (ionChange)="updateSchedule()" (ionCancel)="showSearchbar = false" placeholder="Search"></ion-searchbar>
     <ion-buttons slot="end">
@@ -24,16 +16,6 @@
         </span>
       </ion-button>
     </ion-buttons>
-  </ion-toolbar>
-  <ion-toolbar *ngIf="!ios">
-    <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
-      <ion-segment-button value="all">
-        Todos
-      </ion-segment-button>
-      <ion-segment-button value="favorites">
-        Favoritos
-      </ion-segment-button>
-    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
