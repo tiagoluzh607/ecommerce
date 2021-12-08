@@ -1,8 +1,4 @@
-:root{
-    --ion-text-color: #888888;
-    --ion-text-color-rgb: 136, 136, 136;
-}
-
+/* Geral Aplication */
 
 :root {
 	--ion-color-primary: #27d060;
@@ -60,9 +56,18 @@
 	--ion-color-light-contrast-rgb: 0,0,0;
 	--ion-color-light-shade: #d7d8da;
     --ion-color-light-tint: #f5f6f9;
-    
-    --ion-toolbar-color: white;
 
+    --ion-background-color: #ededed;
+
+    --ion-font-family: 'Montserrat Alternates', sans-serif;
+    --ion-text-color: #888888;
+}
+
+/* Toolbar */
+
+:root{
+    --ion-text-color-rgb: 136, 136, 136;
+    --ion-toolbar-color: white;
 }
 
 ion-header{
@@ -80,5 +85,30 @@ ion-toolbar{
 
 .header-md::after{
     opacity: 0;
+}
+
+
+/* Tabbar */
+
+:root{
+    --ion-tab-bar-background: #ffffff;
+    --ion-tab-bar-color: #888888;
+    --ion-tab-bar-color-selected: #2cc883;
+}
+
+ion-tab-bar{
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* Ion-Card */
+
+ion-card{
+	--background: white;
+	border-radius: 15px;
+    margin-top: 0px;
+}
+
+ion-item{
+    --background: transparent;
 }
 
