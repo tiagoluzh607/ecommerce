@@ -60,13 +60,15 @@
     --ion-background-color: #ededed;
 
     --ion-font-family: 'Montserrat Alternates', sans-serif;
-    --ion-text-color: #888888;
+	--ion-text-color: #888888;
+	--ion-text-color-rgb: 136, 136, 136;
 }
+
+$gold-color: #f4c142;
 
 /* Toolbar */
 
 :root{
-    --ion-text-color-rgb: 136, 136, 136;
     --ion-toolbar-color: white;
 }
 
@@ -105,10 +107,36 @@ ion-tab-bar{
 ion-card{
 	--background: white;
 	border-radius: 15px;
-    margin-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ion-card:hover{
+	transform: scale(1.03);
+	transition-duration: 300ms;
+}
+
+ion-card-header{
+	padding: 0px;
 }
 
 ion-item{
     --background: transparent;
+}
+
+ion-thumbnail img{
+	border-radius: 10px;
+}
+
+.icon-star{
+	color: $gold-color;
+	max-width: 10px;
+    margin-right: 2px;
+}
+
+ion-card ion-label .title-card{
+	color: #5c5c5c;
+	font-size: 15px;
+	letter-spacing: 0px;
 }
 
